@@ -2,8 +2,7 @@ package curso_java_programacao;
 
 public class polidromo {
 	private String palavra;
-	private int esquerda;
-	private int direita; 
+	private int esquerda, direita;
 	
 	polidromo(String word){
 		this.palavra = word;

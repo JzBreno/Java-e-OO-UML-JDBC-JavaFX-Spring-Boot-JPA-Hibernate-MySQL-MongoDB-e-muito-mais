@@ -1,9 +1,7 @@
 package curso_java_programacao;
 //questao 1
 public class validatriangulo {
-	private int a;
-	private int b;
-	private int c;
+	private int a, b, c;
 	
 	validatriangulo(int a, int b, int c){
 		this.a = a;
