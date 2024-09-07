@@ -1,0 +1,5 @@
+package curso_java_programacao;
+
+public class motor {
+	private int potencia;
+}
