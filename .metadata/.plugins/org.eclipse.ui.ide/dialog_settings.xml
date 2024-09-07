@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Java Estudos\Java-e-OO-UML-JDBC-JavaFX-Spring-Boot-JPA-Hibernate-MySQL-MongoDB-e-muito-mais\src\estudos_diversos"/>
 			<item value="D:\Java Estudos"/>
 			<item value="D:\Java Estudos\Java-e-OO-UML-JDBC-JavaFX-Spring-Boot-JPA-Hibernate-MySQL-MongoDB-e-muito-mais"/>
 		</list>
@@ -18,6 +19,9 @@
 		</section>
 	</section>
 	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
 		<section name="NewWizard.dialogBounds">
 			<item key="DIALOG_X_ORIGIN" value="0"/>
 			<item key="DIALOG_Y_ORIGIN" value="0"/>
