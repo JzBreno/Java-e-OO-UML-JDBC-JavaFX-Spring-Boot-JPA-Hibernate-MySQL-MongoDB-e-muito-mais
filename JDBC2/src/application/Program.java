@@ -9,26 +9,29 @@ import db.DB;
 
 
 public class Program {
-
+	//nosso programa principal onde chamaremos nossas classes de auxilio
 	public static void main(String[] args) {
 		
-		@SuppressWarnings("unused")
 		//conexão
 		Connection conn = null;
-		//consulta em sql
+		//recebera a consulta sql
 		Statement st = null;
+		//recebera o resultado da busca a consulta sql
 		ResultSet rs = null;
-		
+		//tratando possiveis erros
 		try {
+			//inicializando nossa conexao e utilizando nosso metodo de classe criado para o banco
 			conn = DB.getConnection();
-			
+			//iniciando nossa variavel statement com nossa conexao
 			st = conn.createStatement();
-			
-			rs = st.executeQuery("select * from department");
+			//rs recebe o resultado da consulta em u "par de chave"
+			rs = st.executeQuery("select * from payment");
+			//esse while ira percorrer todo nosso banco ate o espaco vazio, onde retornara false
 			while(rs.next()) {
-				System.out.println(rs.getInt("Id") + ", " + rs.getString("Name"));
+				//printando nossos resultado utilizando os nomes das chaves
+				System.out.println(rs.getInt("payment_id") + " | " +rs.getInt("customer_id")+" | "+ rs.getDouble("amount"));
 			}
-			
+		//tratando possiveis erros	
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
