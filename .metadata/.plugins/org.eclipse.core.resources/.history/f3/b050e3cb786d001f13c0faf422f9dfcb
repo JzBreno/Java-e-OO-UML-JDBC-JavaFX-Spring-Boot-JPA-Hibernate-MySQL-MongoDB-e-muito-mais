@@ -1,0 +1,50 @@
+package application;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import db.DB;
+
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		@SuppressWarnings("unused")
+		//onde sera estabelecida a conexão com o banco
+		Connection conn = null;
+		//onde sera inserida a consulta em sql
+		Statement st = null;
+		//onde receber o resultado da consulta sql de st
+		ResultSet rs = null;
+		//tratando os possiveis erros
+		try {
+			// TODO Auto-generated method stub
+			//iniciando a conexão com nossa classe de inicialização DB
+			conn = DB.getConnection();
+			//criando variavel que ira receber o comando sql
+			st = conn.createStatement();
+			//atribuindo o comando ao rs onde receberá o retorno do banco
+			SelectAll(rs, st);
+		}catch(SQLException e) {
+			//usando nossa classe de excessão para não quebrar o programa
+			e.printStackTrace();
+		}
+		
+
+	}
+
+	private static void SelectAll(ResultSet rs, Statement st) throws SQLException {
+	
+		rs = st.executeQuery("select * from department where id = 1;");
+		//percorrendo todo banco, quando checar no ultimo o rs.next() retornará false
+		while(rs.next()) {
+			//printandoa saida em rs com os metodos getInt/getString e seus...
+			//respectivos nomes das colunas 
+			System.out.println(rs.getInt("Id") + ", " + rs.getString("Name"));
+		}
+	}
+
+}

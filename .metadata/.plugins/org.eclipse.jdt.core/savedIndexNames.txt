@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-INDEX VERSION 1.134+D:\Java Estudos\.metadata\.plugins\org.eclipse.jdt.core
-3803894794.index
-1865797976.index
-3286635477.index
-=======
 INDEX VERSION 1.134+C:\Users\Jzbreno\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+813313905.index
+892314623.index
+887270203.index
 1865797976.index
 2596941641.index
 2888233541.index
-3803894794.index
->>>>>>> 21ed6e2 (novos projetos jdbc)
