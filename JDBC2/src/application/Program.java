@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import db.DB;
-
+;
 
 public class Program {
 	//nosso programa principal onde chamaremos nossas classes de auxilio
@@ -25,18 +25,24 @@ public class Program {
 			//iniciando nossa variavel statement com nossa conexao
 			st = conn.createStatement();
 			//rs recebe o resultado da consulta em u "par de chave"
-			rs = st.executeQuery("select * from payment");
+			rs = st.executeQuery("select * from department");
 			//esse while ira percorrer todo nosso banco ate o espaco vazio, onde retornara false
+		
 			while(rs.next()) {
 				//printando nossos resultado utilizando os nomes das chaves
-				System.out.println(rs.getInt("payment_id") + " | " +rs.getInt("customer_id")+" | "+ rs.getDouble("amount"));
+				System.out.println(rs.getInt("ID") + " | " +rs.getString("NAME"));
 			}
 		//tratando possiveis erros	
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
+		finally {
+			//finalizando as instancias
+			DB.closeresultSet(rs);
+			DB.closeStatement(st);
+			DB.closeConnection();
+		}
 		
-
 	}
 
 }
