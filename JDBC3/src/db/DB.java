@@ -67,6 +67,7 @@ public class DB {
 			throw new DbException(e.getMessage());
 		}
 	}
+	//use para fechar os statement utilizados
 	public static void closeStatement(Statement st) {
 		if(st !=null) {
 			try {
@@ -77,7 +78,7 @@ public class DB {
 		}
 		
 	}
-	
+	//use para fechar os ResultsSet utilizados
 	public static void closeSResultSet(ResultSet rs) {
 		if(rs !=null) {
 			try {
