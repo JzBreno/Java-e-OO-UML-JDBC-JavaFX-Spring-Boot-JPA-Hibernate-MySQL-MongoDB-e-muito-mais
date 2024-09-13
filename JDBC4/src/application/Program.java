@@ -12,6 +12,6 @@ public class Program {
 		Connection conn = DB.getConnection();
 	
 		Methods md = new Methods(conn);
-		md.Atualize(2);
+		md.Deletar(5);
 	}
 }

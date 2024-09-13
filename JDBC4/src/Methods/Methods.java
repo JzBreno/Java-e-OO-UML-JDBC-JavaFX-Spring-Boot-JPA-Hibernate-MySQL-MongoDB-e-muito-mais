@@ -32,6 +32,22 @@ public class Methods {
 	    }
 	}
 
+	public void Deletar(int indice) {
+		   try {
+		        this.st = conn.prepareStatement("DELETE FROM department"
+		        		+ " WHERE Id = ?");
+		        this.st.setInt(1, indice);
+			    int row = st.executeUpdate();
+			    
+			    System.out.println("Done! rows Affected: " + row);
+			    
+			    } catch (SQLException e) {
+			        e.printStackTrace();
+			    } finally {
+			        DB.closeStatement(st);
+			        DB.closeConnection();
+			    }
+	}
 	
 	
 	
