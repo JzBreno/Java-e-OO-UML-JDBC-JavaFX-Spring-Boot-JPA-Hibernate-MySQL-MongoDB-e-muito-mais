@@ -1,8 +1,8 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=21ed6e2 (novos projetos jdbc)
+SWITCH_PERSPECTIVE_ON_PROJECT_CREATION=always
 eclipse.preferences.version=1
-<<<<<<< HEAD
-platformState=1740588746062945
-=======
-platformState=1740287999953453
->>>>>>> 21ed6e2 (novos projetos jdbc)
+platformState=1741340063397695
 quickStart=false
 tipsAndTricks=true
