@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import db.DB;
+import db.DbintegritException;
 
 public class Methods {
 	
@@ -20,7 +21,7 @@ public class Methods {
 	        this.st = conn.prepareStatement("UPDATE seller "
 	                + "SET BaseSalary = BaseSalary + ? "
 	                + "WHERE DepartmentId = ?");
-	        this.st.setDouble(1, 600.00);
+	        this.st.setDouble(1, 900.00);
 	        this.st.setInt(2, IndiceDepartamento);
 	        int rowsAffected = st.executeUpdate();
 	        System.out.println("Done, rows affected: " + rowsAffected);
@@ -42,7 +43,7 @@ public class Methods {
 			    System.out.println("Done! rows Affected: " + row);
 			    
 			    } catch (SQLException e) {
-			        e.printStackTrace();
+			        throw new DbintegritException(e.getMessage());
 			    } finally {
 			        DB.closeStatement(st);
 			        DB.closeConnection();

@@ -1,0 +1,5 @@
+Transações 
+API:
+setAutoCommit(false): processos so sero confirmado quando estiver TRUE
+commit(): confirmando transação
+rollback(): desfazer o que ja foi feito ate o momento
