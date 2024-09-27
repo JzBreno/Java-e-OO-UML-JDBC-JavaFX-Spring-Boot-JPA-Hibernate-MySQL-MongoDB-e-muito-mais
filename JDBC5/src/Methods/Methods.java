@@ -59,12 +59,12 @@ public class Methods {
 		    state = conn.createStatement();
 		    conn.setAutoCommit(false);
 		    
-		    int rows1 = state.executeUpdate("UPDATE seller SET BaseSalary = 2090 WHERE DepartmentId = 1;");
+		    int rows1 = state.executeUpdate("UPDATE seller SET BaseSalary = 28987 WHERE DepartmentId = 1;");
 		    int x = 1;
-		    //if(x<2) {
-		    //	throw new SQLException("Fake Error");
-		    //}
-		    int rows2 = state.executeUpdate("UPDATE seller SET BaseSalary = 3090 WHERE DepartmentId = 2;");
+		    if(x<2) {
+		    	throw new SQLException("Fake Error");
+		    }
+		    int rows2 = state.executeUpdate("UPDATE seller SET BaseSalary = 39866 WHERE DepartmentId = 2;");
 		    conn.commit();
 		    System.out.println("Rows1: "+rows1);
 		    System.out.println("Rows2: "+rows2);

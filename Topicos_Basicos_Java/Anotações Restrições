@@ -1,0 +1,10 @@
+Convenções
+
+Camel Case: lastName
+- pacotes
+- atributos
+- metodos
+- variaveis e paramentros
+
+Pascal Case: ProductService
+-classes4
