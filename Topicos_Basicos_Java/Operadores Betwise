@@ -1,0 +1,6 @@
+operador 	Significado
+	&		operação "e" bit a bit
+	|		operação "OU" bit a bit
+	^		operação "OU-Exclusivo" bit a bit
+	
+essas operação 
