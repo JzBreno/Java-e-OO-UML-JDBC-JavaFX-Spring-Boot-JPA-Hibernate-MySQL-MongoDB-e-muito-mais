@@ -1,0 +1,5 @@
+Formatar: toLowerCase(),toUpperCase(),trim()
+recortar: substring(inicio), substring(inicio, fim)
+substituir: Replace(char,char), Replace(String, String)
+buscar: IndexOf, LastIndexOf
+str.Split("")
