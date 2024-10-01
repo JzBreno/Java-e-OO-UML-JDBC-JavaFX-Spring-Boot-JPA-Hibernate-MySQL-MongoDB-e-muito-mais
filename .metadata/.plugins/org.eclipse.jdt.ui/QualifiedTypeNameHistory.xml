@@ -3,4 +3,7 @@
     <fullyQualifiedTypeName name="db.DbintegritException"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="db.DbException"/>
+    <fullyQualifiedTypeName name="Funcionario.Funcionario"/>
+    <fullyQualifiedTypeName name="Funcionario.Pessoa"/>
+    <fullyQualifiedTypeName name="staticfunções.TesteStatic"/>
 </qualifiedTypeNameHistroy>
