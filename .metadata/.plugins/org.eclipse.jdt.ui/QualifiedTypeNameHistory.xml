@@ -6,4 +6,12 @@
     <fullyQualifiedTypeName name="Funcionario.Funcionario"/>
     <fullyQualifiedTypeName name="Funcionario.Pessoa"/>
     <fullyQualifiedTypeName name="staticfunções.TesteStatic"/>
+    <fullyQualifiedTypeName name="java.lang.ProcessHandle"/>
+    <fullyQualifiedTypeName name="vetorobjeto.ProcessosPc"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="vetorobjeto.Computador"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>
