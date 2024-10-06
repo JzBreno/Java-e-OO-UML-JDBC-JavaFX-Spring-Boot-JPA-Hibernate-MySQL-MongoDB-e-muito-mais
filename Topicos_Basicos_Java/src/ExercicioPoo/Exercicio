@@ -1,0 +1,34 @@
+Exercício: Sistema de Gerenciamento de Veículos
+Contexto:
+Você foi designado a criar um sistema para gerenciar uma frota de veículos. Cada veículo pode ter características diferentes, como o tipo de combustível, capacidade de carga e velocidade máxima. Além disso, você precisa garantir que todos os veículos implementem alguns comportamentos comuns, como acelerar e frear. Existem também veículos especializados como carros, caminhões e motocicletas que possuem características adicionais.
+
+Objetivos:
+Crie uma interface chamada Veiculo que contenha os seguintes métodos abstratos:
+
+void acelerar();
+void frear();
+Crie uma classe abstrata VeiculoBase que implementa a interface Veiculo. Essa classe deve:
+
+Ter atributos comuns como:
+String modelo;
+int ano;
+String tipoCombustivel;
+Ter um construtor que inicialize esses atributos.
+Implementar o método frear() da interface de forma genérica, imprimindo uma mensagem do tipo "Freando o veículo".
+Declarar o método acelerar() como abstrato para que cada veículo especializado implemente seu próprio comportamento ao acelerar.
+Crie três classes que herdam de VeiculoBase:
+
+Carro:
+Atributo adicional: int quantidadeDePortas;
+Implementação do método acelerar() deve imprimir uma mensagem que inclua o modelo e a velocidade (por exemplo, "O carro [modelo] está acelerando a 100 km/h").
+Caminhao:
+Atributo adicional: int capacidadeDeCarga;
+Implementação do método acelerar() deve imprimir uma mensagem que inclua o modelo e a carga transportada (por exemplo, "O caminhão [modelo] está acelerando com uma carga de [capacidadeDeCarga] kg").
+Moto:
+Atributo adicional: boolean possuiPartidaEletrica;
+Implementação do método acelerar() deve imprimir uma mensagem com informações sobre a partida elétrica e a aceleração (por exemplo, "A moto [modelo] com partida elétrica está acelerando").
+Crie uma classe principal (Main) que:
+
+Crie instâncias de Carro, Caminhao, e Moto.
+Chame os métodos acelerar() e frear() para cada um dos veículos, demonstrando polimorfismo e herança.
+Utilize as classes e a interface de forma que os veículos possam ser tratados de maneira genérica através da interface Veiculo.
